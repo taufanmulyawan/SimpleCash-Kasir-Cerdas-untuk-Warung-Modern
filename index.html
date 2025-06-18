@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Aplikasi Kasir Sederhana</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Aplikasi Kasir</h1>
+
+    <div class="menu">
+      <h2>Menu Makanan</h2>
+      <div id="menu-makanan"></div>
+
+      <h2>Menu Minuman</h2>
+      <div id="menu-minuman"></div>
+    </div>
+
+    <div class="pembayaran">
+      <label for="bayar">Uang Dibayar (Rp):</label>
+      <input type="number" id="bayar" placeholder="Contoh: 50000">
+    </div>
+
+    <button onclick="selesaiBelanja()">Selesai & Cetak Struk</button>
+    <button onclick="window.print()">Cetak ke PDF / Print</button>
+
+    <div class="struk" id="struk"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
